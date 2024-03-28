@@ -382,7 +382,19 @@ export const asyncRoutes = [
       }
     ]
   },
-
+  // myself text add html
+  {
+    path: '/mediaplayer',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/mediaplayer/index'),
+        name: 'MediaPlayerDemo',
+        meta: { title: 'MediaPlayer', icon: 'link' }
+      }
+    ]
+  },
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]

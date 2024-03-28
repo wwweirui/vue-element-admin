@@ -95,6 +95,13 @@ const componentsRouter = {
       component: () => import('@/views/components-demo/drag-kanban'),
       name: 'DragKanbanDemo',
       meta: { title: 'Drag Kanban' }
+    },
+    //  以下仿造element-ui 组件编写
+    {
+      path: 'self-elbacktop',
+      component: () => import('@/views/components-demo/elBackTop'),
+      name: 'ElBackTop',
+      meta: { title: 'sele-elbacktop' }
     }
   ]
 }
